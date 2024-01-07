@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#header{
+background-color: #141034;
+width: 100%;
+height: 800px;
+}
+
+.logo{
+    width: 120px;
+    
+}
+
+nav{
+    flex-wrap: wrap;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    margin-top: 2px;
+    padding-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    padding-left: 80px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav ul li a::after{
+    width: 0%;
+    height: 3px;
+    background-color: bisque;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    content:'';
+    transition:1s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.header-text{
+    margin-top: 5%;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-text p{
+    font-family: 'Sono', sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: white;
+}
+
+.header-text h1 span{
+    color: bisque;
+    font-size:170px;
+    
+}
+
+.br{
+    font-size:50px;
+    font-family: 'Fira Sans';
+
+}
